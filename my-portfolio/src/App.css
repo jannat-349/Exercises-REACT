@@ -1,6 +1,5 @@
 .App {
-  /* text-align: center; */
-  background-image: url("./images/pexels-monstera-6621258.jpg");
+  text-align: center;
 }
 
 .App-logo {
@@ -38,44 +37,3 @@
   }
 }
 
-.header {
-  display: flex;
-  gap: 20px;
-  padding: 10px;
-  /* background-color: red; */
-}
-.my-photo {
-  width: 150px;
-  height: 150px;
-  /* background-color: blue; */
-}
-.my-photo img {
-  width: 100%;
-  border-radius: 100px;
-}
-.my-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /* background-color: yellow; */
-  flex: 1;
-}
-.my-info h1 {
-  color: navy;
-}
-.my-contact {
-  display: flex;
-  flex-direction: column;
-}
-.about-me {
-  display: flex;
-  flex-direction: column;
-  /* background-color: pink; */
-}
-.my-education ul {
-  display: flex;
-  /* background-color: rebeccapurple; */
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
