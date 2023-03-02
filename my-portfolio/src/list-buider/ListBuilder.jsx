@@ -1,15 +1,27 @@
+import { useState } from "react";
+
 function ListBuilder() {
-  const list = ["APPLE", "DELL", "ASUS", "HP", "ACER", "SAMSUNG"];
+  const [newItem, setNewItem] = useState("");
+  const [list, setList] = useState([]);
+  function handleOnChange(event) {
+    setNewItem(event.target.value);
+  }
+  function handleOnClick() {
+    if(!newItem) {
+        return;
+    }
+    setList([...list, newItem]);
+  }
   return (
     <div className="ListBuilder">
       <div className="Input">
-        <input />
-        <button>Add</button>
+        <input onChange={handleOnChange} />
+        <button onClick={handleOnClick}>Add</button>
       </div>
       <div className="Output">
         <ul>
           {list.map((item, index) => {
-            return <li key = {index}>{item}</li>;
+            return <li key={index}>{item}</li>;
           })}
         </ul>
       </div>
