@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   justify-content: center;
 }
@@ -41,6 +41,7 @@
 
 .ListBuilder {
   display: flex;
+  flex-direction: column;
 }
 
 .Input {
@@ -48,3 +49,4 @@
   gap: 10px;
   padding: 10px;
 }
+
