@@ -1,3 +1,4 @@
+import './ListInput.css';
 function ListInput({ handleOnChange, handleOnClick }) {
   return (
     <div className="Input">

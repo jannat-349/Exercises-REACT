@@ -39,10 +39,7 @@
   }
 }
 
-.ListBuilder {
-  display: flex;
-  flex-direction: column;
-}
+
 
 .Input {
   display: flex;

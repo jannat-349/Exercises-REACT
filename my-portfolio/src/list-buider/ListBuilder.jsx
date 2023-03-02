@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ListInput } from "./ListInput";
 import { ListOutput } from "./ListOutput";
+import './ListBuilder.css';
 
 function ListBuilder() {
   const [newItem, setNewItem] = useState("");
