@@ -8,8 +8,8 @@ function ListBuilder() {
       </div>
       <div className="Output">
         <ul>
-          {list.map((item) => {
-            return <li>{item}</li>;
+          {list.map((item, index) => {
+            return <li key = {index}>{item}</li>;
           })}
         </ul>
       </div>
